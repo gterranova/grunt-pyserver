@@ -42,7 +42,7 @@ module.exports = function(grunt) {
     pyserver: {
       options: {
         port: 8000,
-        documentRoot: 'www'
+        documentRoot: ['www','.tmp']
       },
       start: {
         //dest: '<%= pkg.name %>.min.js'

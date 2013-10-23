@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     
     var start_server = function(port, root, done)  {
         grunt.log.writeln('Starting server...');
-        var pyserverArgs = [pyserver.path, port, root];
+        var pyserverArgs = [pyserver.path, port].concat(root);
         grunt.verbose.writeflags(pyserverArgs, 'Options');
 
         async.forever(function(){
