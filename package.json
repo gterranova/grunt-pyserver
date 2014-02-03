@@ -31,7 +31,7 @@
   "dependencies": {
     "node-pyserver-bin": "git+ssh://git@github.com:gterranova/node-pyserver-bin.git",
     "async": "~0.2.9"
-  },  
+  },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-clean": "~0.4.0",
@@ -44,5 +44,13 @@
   },
   "keywords": [
     "gruntplugin"
-  ]
+  ],
+  "readme": "# grunt-pyserver\r\n\r\n> Starts your pyserver\r\n\r\n## Getting Started\r\nThis plugin requires Grunt `~0.4.0`\r\n\r\nIf you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:\r\n\r\n```shell\r\nInstall with npm: `npm install --save-dev git://github.com/gterranova/node-pyserver-bin.git`\r\n```\r\n\r\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\r\n\r\n```js\r\ngrunt.loadNpmTasks('grunt-pyserver');\r\n```\r\n\r\n## The \"pyserver\" task\r\n\r\n### Overview\r\nIn your project's Gruntfile, add a section named `pyserver` to the data object passed into `grunt.initConfig()`.\r\n\r\n```js\r\ngrunt.initConfig({\r\n  pyserver: {\r\n    options: {\r\n      // Task-specific options go here.\r\n    },\r\n    your_target: {\r\n      // Target-specific file lists and/or options go here.\r\n    },\r\n  },\r\n})\r\n```\r\n\r\n### Options\r\n\r\n#### options.port\r\nType: `Int`\r\nDefault value: `8000`\r\n\r\nPort number.\r\n\r\n#### options.documentRoot\r\nType: `String`\r\nDefault value: `''`\r\n\r\nThe pyserver document root.\r\n\r\n### Usage Examples\r\n\r\n#### Default Options\r\nIn this example, the default options are used to start the pyserver. \r\n\r\n```js\r\ngrunt.initConfig({\r\n  pyserver: {\r\n    options: {},\r\n    start: {\r\n    },\r\n  },\r\n})\r\n```\r\n\r\n## Contributing\r\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\r\n\r\n## Release History\r\n_(Nothing yet)_\r\n\r\n## License\r\n\r\nEverything licensed under the [BSD license](http://opensource.org/licenses/bsd-license.php)  and copyright Gianpaolo Terranova.\r\n\r\n",
+  "readmeFilename": "README.md",
+  "_id": "grunt-pyserver@0.1.0",
+  "dist": {
+    "shasum": "e35b575e77dcae98feb70c3f3d0cfd1c253232d9"
+  },
+  "_resolved": "git+ssh://git@github.com:gterranova/grunt-pyserver.git#7a56d495d1b97dc9bd3e3d6676559b06d830c44a",
+  "_from": "grunt-pyserver@git+ssh://git@github.com:gterranova/grunt-pyserver.git"
 }

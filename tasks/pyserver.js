@@ -24,11 +24,13 @@ module.exports = function(grunt) {
         }, function(){});
     };
   
-    grunt.registerTask('pyserver', 'Start pyserver', function () {            
+    grunt.registerMultiTask('pyserver', 'Start pyserver', function () {            
         var options = this.options({
-            port: 8000,
-            documentRoot: ''
+            port: 8000
+            //documentRoot: grunt.option('documentRoot') ? grunt.option('documentRoot') : '' 
         });
+
+        grunt.verbose.writeflags(options, 'Options');
                 
         start_server(options.port, options.documentRoot);
     });
